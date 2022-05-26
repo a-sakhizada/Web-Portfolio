@@ -3,3 +3,14 @@
 
 /*========================= VARIABLES CSS ======================*/
 
+/* root is for declaring global CSS variables that will apply to html */
+:root {
+    --header-height: 3rem;
+
+    /*================= Colors =================*/
+    /* Change favourite color */
+    --hue-color: ;
+
+    /* HSL color mode */
+    --first-color: hsl(250, 69%, 61%);
+}
