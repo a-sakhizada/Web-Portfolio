@@ -230,8 +230,9 @@ img{
     color: var(--first-color-alt);
 }
 
-
-
-
+/* show menu */
+.show-menu{
+    bottom: 0; 
+}
 
 
