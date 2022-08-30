@@ -31,7 +31,7 @@
     --body-font: 'Poppins', sans-serif;
 
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
-    --big-font-size: 2rem;
+    --big-font-size: 3rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1.125rem;
@@ -121,6 +121,20 @@ body {
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color: var(--text-color);
+}
+
+#particles-js {
+    /* position: fixed;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: 50% 50%;
+    opacity: 0.48; */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
 h1,
@@ -343,7 +357,7 @@ img {
 .home__scroll {
     display: none;
     position: relative;
-    top: -16rem;
+    top: -10rem;
 }
 
 .home__scroll-button {
@@ -426,6 +440,13 @@ img {
     border-radius: .5rem;
     justify-self: center;
     align-self: center;
+    /* border:5px solid #FFF; */
+    /* box-shadow: 2px solid rgba(0, 0, 0, .15);
+    -moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow: 10px 10px 5px #ccc;
+    box-shadow: 10px 10px 5px gray;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px; */
 }
 
 .about__description {
@@ -529,35 +550,35 @@ img {
 
 /* frontend skills */
 .skills__html {
-    width: 90%;
+    width: 80%;
 }
 
 .skills__css {
-    width: 80%;
+    width: 70%;
 }
 
 .skills__js {
-    width: 85%;
-}
-
-.skills__react {
     width: 75%;
 }
 
+.skills__react {
+    width: 60%;
+}
+
 /* backend skills */
-.skills__php {
-    width: 25%;
+.skills__express {
+    width: 60%;
 }
 
 .skills__node {
-    width: 80%;
+    width: 75%;
 }
 
-.skills__firebase {
-    width: 25%;
+.skills__mongo {
+    width: 55%;
 }
 
-.skills__python {
+.skills__ruby {
     width: 45%;
 }
 
@@ -571,11 +592,28 @@ img {
 }
 
 .skills__photoshop {
-    width: 50%;
+    width: 45%;
 }
 
 .skills__wordpress {
-    width: 45%;
+    width: 40%;
+}
+
+/* digital marketing skills */
+.skills__slack {
+    width: 40%;
+}
+
+.skills__seo {
+    width: 40%;
+}
+
+.skills__google {
+    width: 40%;
+}
+
+.skills__analytics {
+    width: 40%;
 }
 
 .skills__close .skills__list {
@@ -1138,6 +1176,26 @@ img {
 
 /* for screens between 350px and 465px */
 @media screen and (min-width: 350px) and (max-width: 465px) {
+
+    .home__social {
+        position: relative;
+        top: 100px;
+
+    }
+
+    .one {
+        position: relative;
+        top: 40px;
+    }
+
+    .home__content {
+        grid-template-columns: .5fr 3fr;
+        padding-top: 3.5rem;
+        position: relative;
+        top: -8rem;
+        align-items: start;
+    }
+
     .services__content {
         padding-right: .5rem;
     }
@@ -1319,7 +1377,7 @@ img {
     }
 
     .services__modal-content {
-        width: 450px;
+        width: 500px;
     }
 
     .portfolio__img {
