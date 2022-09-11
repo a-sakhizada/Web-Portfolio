@@ -155,8 +155,8 @@
                     </div>
                     <div class="home__data">
                         <h1 class="home__title">Hi, I'm Arezou</h1>
-                        <h3 class="home__subtitle">Programmer | Fullstack Developer | Designer</h3>
-                        <p class="home__description">A Computer Programmer who enjoys developing and designing both web
+                        <h3 class="home__subtitle"> Frontend Developer | Designer | Software Developer</h3>
+                        <p class="home__description">I enjoy developing and designing both web
                             and mobile applications! <br>
                             <br> My main focus is Frontend Web Development.
                         </p>
@@ -602,7 +602,7 @@
                         <!--============================= QUALIFICATION 3 =============================-->
                         <div class="qualification__data">
                             <div>
-                                <h3 class="qualification__title">Fullstack Developer</h3>
+                                <h3 class="qualification__title">Frontend Developer</h3>
                                 <span class="qualification__subtitle">Elocity Technologies Inc</span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
@@ -637,7 +637,7 @@
                         <!--============================= QUALIFICATION 5 =============================-->
                         <div class="qualification__data">
                             <div>
-                                <h3 class="qualification__title">Fullstack developer and UI/UX Design</h3>
+                                <h3 class="qualification__title">Frontend Developer/UI-UX Design</h3>
                                 <span class="qualification__subtitle">BigInt Labs</span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
@@ -1075,37 +1075,37 @@
 
                         <div>
                             <h3 class="contact__title">Location</h3>
-                            <span class="contact__subtitle">Canada - Toronto, London</span>
+                            <span class="contact__subtitle">Canada - Toronto, London, Cambridge</span>
                         </div>
                     </div>
                 </div>
 
-                <form action="" class="contact__form grid">
+                <form action="/message" method="POST" class="contact__form grid">
                     <div class="contact__inputs grid">
                         <div class="contact__content">
                             <label for="" class="contact__label">Name</label>
-                            <input type="text" class="contact__input">
+                            <input type="text" id="name" name="name" class="contact__input">
                         </div>
 
                         <div class="contact__content">
                             <label for="" class="contact__label">Email</label>
-                            <input type="email" class="contact__input">
+                            <input type="email" id="email" name="email" class="contact__input">
                         </div>
                     </div>
                     <div class="contact__content">
-                        <label for="" class="contact__label">Project</label>
-                        <input type="text" class="contact__input">
+                        <label for="" class="contact__label">Subject</label>
+                        <input type="text" id="project" name="subject" class="contact__input">
                     </div>
                     <div class="contact__content">
                         <label for="" class="contact__label">Message</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        <textarea name="message" id="message" cols="0" rows="7" class="contact__input"></textarea>
                     </div>
 
                     <div>
-                        <a href="#" class="button button--flex">
+                        <button id="send_message" class="button button--flex contact_me_button">
                             Send Message
                             <i class="uil uil-message button__icon"></i>
-                        </a>
+                    </button>
                     </div>
                 </form>
             </div>
